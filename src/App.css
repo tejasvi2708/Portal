@@ -1,38 +1,240 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+:root{
+    --text-primary:#000;
+    --bgPrimary:#fff;
+   --bgSecondary: #F9F9F9;
+   --pink: #0071bd;
+   --light-blue: #e6f7ff;
+   --border: #d9d9d9;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Montserrat", sans-serif ;
+    
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  }
+  .nav-container{
+    position:fixed;
+    left: 0;
+    margin: 10px;
+    height: 100vh;
+    width:25vw;
+    margin: 0px;
+    background-color: #E2DADB;
+    font-family: "Montserrat", sans-serif;
+  }
+  .logo-container{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .logo{
+    margin:0 0 0 15px;
+  }
+  .logo a{
+    text-decoration: none;
+    color:black;
+  }
+  .menu-container{
+    height:100%;
+    width:100%;
+  }
+  .main{
+   margin-left:240px;
+    width: 75vw;
+    height:100vh;
+  }
+  .container{
+    width:100%;
+    height:100vh;
+  }
+  .list-items{
+    padding:20px;
+  }
+  .item {
+    padding:20px;
+   list-style:none;
+   font-weight:700;
+   font-size:1em;
+   color:black;
+  }
+  .item a{
+    text-decoration: none;
+    color:black;
+  }
+  .item a:hover{
+    text-decoration:underline;
+    padding:5px 0 0 5px;
+    border-radius:10px;
+    width:80%;
+  }
+  .btn{
+    
+    padding:15px 25px;
+    border-radius:10px;
+    background-color: #000;
+    color:white;
+    border:none;
+    cursor:pointer;
+  }
+  .menu-control-container{
+    display:none;
+  }
+  .btn:hover{
+    font-weight:700;
+  }
+  .button-cont{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:150px;
+  }
+  .routes{
+    padding: 20px;
+  }
+  .content{
+    width:100%;
+    margin-left:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .heading{
+    text-align: center;
+    line-height:2.2em;
+    margin:25px;
+  }
+  .sub-heading{
+    background-color: black;
+    color:white;
+    padding:10px;
+    border-radius:10px;
+  }
+  .heading-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+    font-size:2.2em;
+    font-weight: 500;
+  }
+  .image-col{
+    width:60%;
+  }
+  .description-col{
+    width:40%;
+     padding-left:20px;
+    text-align:'center';
+  } 
+  .footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding:20px 0;
+    justify-content: center;
+    align-items: center;
+  }
+ .common{
+  padding-left:20px;
+ }
+ @media screen and (max-width:1300px){
+  .main{
+      margin-left: 300px;
+     
   }
 }
+@media screen and (min-width:1300px){
+  .main{
+      margin-left: 22rem;
+  }
+}
+@media screen and (max-width:1170px){
+  .main{
+      margin-left: 17rem;
+      
+  }
+}
+@media screen and (max-width:1000px){
+  .main{
+      margin-left: 250px;
+      padding:0;
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+@media screen and (max-width:800px){
+  .app{
+      flex-direction: column;
+      overflow: hidden;
+  }
+  .navbar{
+      flex: 1;
+  }
+.logo-container{
+  display:none;
+}
+  .main{
+      flex: 1;
+      margin-top: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      width:100vw;
+      padding:0;
+  }
+.nav-container{
+      height: 8vh;
+      position:fixed;
+      width: 100vw;
+      z-index: 100;
+      background-color: var( --bgSecondary);
+}
+.footer{
+  width:100%;
+}
+  .menu-control-container{
+      display: block !important;
+      float:right;
+      margin-top:10px;
+      margin-right:5px;
+  }
+  .button-cont{
+    display:none;
+  }
+  .list-items{
+    width:40vw;
+    float:right;
+    padding:0;
+    margin-top:40px;
+    margin-left:80px;
+    padding-left:20px;
+    background-color: #E2DADB;
+    border-radius:10px;
+  }
+.heading-text{
+  font-size:1.7em;
+  text-align:center;
+}
+.page-container{
+  display:flex;
+  flex-direction:column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width:100vw;
+}
+.image-col{
+  width:100vw;
+  
+}
+.description-col{
+  width:100vw;
+  padding:0;
+}
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  

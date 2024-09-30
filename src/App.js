@@ -1,7 +1,6 @@
 import React from 'react'
-import {Routes, Route, Link} from 'react-router-dom';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {Layout, Typography, Space} from 'antd';
+import {Routes, Route} from 'react-router-dom';
+import {Layout, Typography} from 'antd';
 import {Navbar,ProjectManagement,Home,DataCollection,Reporting,RiskManagement} from './components';
 import './App.css';
 const App = () => {

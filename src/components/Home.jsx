@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Typography,Row, Col, Card,Image} from 'antd'
+import { Typography,Row, Col,Image} from 'antd'
 import image from '../images/bg_image2.jpg';
 const {Title, Text}=Typography;
 const Home = () => {

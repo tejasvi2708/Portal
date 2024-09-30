@@ -96,7 +96,7 @@ const ProjectList = ({ projects, updateProject, deleteProject }) => {
       
       <Modal
         title="Edit Project"
-        visible={!!editingProject}
+        open={!!editingProject}
         onCancel={() => setEditingProject(null)}
         onOk={handleSave}
       >

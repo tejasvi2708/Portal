@@ -1,5 +1,5 @@
 import React from 'react'
-import {Typography, Menu,Button, Avatar} from "antd";
+import {Button} from "antd";
 import {MenuOutlined} from'@ant-design/icons';
 import { useEffect, useState } from 'react';
 import {Link } from "react-router-dom";
